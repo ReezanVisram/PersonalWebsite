@@ -1,0 +1,13 @@
+.projects-container {
+    text-align: center;
+    margin: 10%;
+}
+
+.projects-header-container {
+    border-bottom: 1px solid #D2BD45;
+    margin-bottom: 1%;
+}
+
+.projects-header {
+    color: #D2BD45;
+}

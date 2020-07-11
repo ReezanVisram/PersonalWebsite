@@ -1,0 +1,39 @@
+.about-container {
+    margin: 10%;
+    text-align: center;
+}
+
+.about-header-container {
+    border-bottom: 1px solid #D2BD45;
+    margin-bottom: 1%;
+}
+
+.about-header {
+    color: #D2BD45;
+}
+
+.about-content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content-container p {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.about-content-container h1 {
+    font-size: 64px;
+    color: #D2BD45;
+}
+
+.about-content-container h2 {
+    color: #D2BD45;
+}
+
+.about-content-container img{
+    width: 30%;
+    height: 30%;
+    margin: auto;
+    margin-top: 1%;
+}

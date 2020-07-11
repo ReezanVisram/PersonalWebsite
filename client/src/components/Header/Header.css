@@ -1,0 +1,38 @@
+a {
+  text-decoration: none;
+  color: #D2BD45;
+}
+
+.App-header {
+  display: flex;
+  padding-top: 5px;
+}
+
+.header-title-container{
+  flex-grow: 2;
+  padding-left: 2%;
+}
+  
+.header-links-container {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+  align-items: center;
+}
+  
+.header-button {
+  width: 75px;
+  height: 25px;
+  display: block;
+  border-style: solid;
+  border-color: #D2BD45;
+  padding: 1% 2% 0% 2%;
+  text-align: center;
+  color: #D2BD45;
+  border-width: 1px;
+}
+
+.header-button:hover {
+  background-color: #1B1B1B;
+}
+  
