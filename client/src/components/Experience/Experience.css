@@ -1,0 +1,17 @@
+.experience-container {
+    text-align: center;
+    margin: 10%;
+}
+
+.experience-header-container {
+    border-bottom: 1px solid #D2BD45;
+    margin-bottom: 1%;
+}
+
+.experience-header {
+    color: #D2BD45;
+}
+
+.experience-content-container {
+    background-color: #535353;
+}
