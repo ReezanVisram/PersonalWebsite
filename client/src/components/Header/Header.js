@@ -1,19 +1,25 @@
 import React from 'react';
 import './Header.css';
 
+import DrawerToggleButton from './DrawerToggleButton/DrawerToggleButton';
+
 const Header = () => {
     return (
         <header className="App-header">
             <div className="header-title-container">
-            <h1 className="header-title"><a className="header-title-link" href="#">Reezan Visram</a></h1>
+                <h1 className="header-title"><a className="header-title-link" href="#">Reezan Visram</a></h1>
             </div>
             
             <div className="header-links-container">
-            <a className="header-link" href="#">About Me</a>
-            <a className="header-link" href="#">Projects</a>
-            <a className="header-link" href="#">Experience</a>
-            <a className="header-link" href="#">Reference Letters</a>
-            <a className="header-button" href="#">Resume</a>
+                <a className="header-link" href="#">About Me</a>
+                <a className="header-link" href="#">Projects</a>
+                <a className="header-link" href="#">Experience</a>
+                <a className="header-link" href="#">Reference Letters</a>
+                <a className="header-button" href="#">Resume</a>
+            </div>
+
+            <div>
+                <DrawerToggleButton />
             </div>
         </header>
     )

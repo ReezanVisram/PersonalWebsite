@@ -9,14 +9,17 @@ import Experience from './components/Experience/Experience';
 
 function App() {
   return (
-    <div className="App">
+    <div style={{height: "100%"}}>
       <Header />
 
-      <About />
+      <div style={{marginTop: "15px"}}>
+        <About />
 
-      <Projects />
+        <Projects />
 
-      <Experience />
+        <Experience />
+      </div>
+
     </div>
   );
 }
