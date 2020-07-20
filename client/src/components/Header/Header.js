@@ -1,9 +1,10 @@
 import React from 'react';
 import './Header.css';
+import Pdf from '../Resume.pdf';
 
 import DrawerToggleButton from './DrawerToggleButton/DrawerToggleButton';
 
-const Header = () => {
+const Header = ({ drawerClickHandler }) => {
     return (
         <header className="App-header">
             <div className="header-title-container">
@@ -15,11 +16,11 @@ const Header = () => {
                 <a className="header-link" href="#">Projects</a>
                 <a className="header-link" href="#">Experience</a>
                 <a className="header-link" href="#">Reference Letters</a>
-                <a className="header-button" href="#">Resume</a>
+                <a className="header-button" href={Pdf}>Resume</a>
             </div>
 
-            <div>
-                <DrawerToggleButton />
+            <div className="header-side-drawer-toggle-button-container">
+                <DrawerToggleButton click={drawerClickHandler} />
             </div>
         </header>
     )

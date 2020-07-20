@@ -32,8 +32,23 @@
 }
 
 .about-content-container img{
-    width: 30%;
-    height: 30%;
+    width: 20%;
+    height: 20%;
     margin: auto;
     margin-top: 1%;
+}
+
+@media (max-width: 720px) {
+    .about-header-container {
+        margin-top: 15%;
+    }
+
+    .about-content-container {
+        margin-top: 2.5%;
+    }
+
+    .about-content-container img {
+        width: 40%;
+        height: 40%;
+    }
 }

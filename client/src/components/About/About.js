@@ -11,7 +11,7 @@ const About = () => {
             <div className="about-content-container">
                 <p>Hi I'm</p>
                 <h1>Reezan Visram</h1>
-                <img src={ require('../../images/DefaultProfilePic.png') } />
+                <img src={ require('../../images/Me.jpg') } />
             </div>
         </div>
 

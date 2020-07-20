@@ -42,3 +42,18 @@ a {
   background-color: #1B1B1B;
 }
   
+.header-side-drawer-toggle-button-container {
+  margin: 1%;
+}
+
+@media (max-width: 720px) {
+  .header-links-container {
+    display: none;
+  }
+}
+
+@media (min-width: 721px) {
+  .header-side-drawer-toggle-button-container {
+    display: none;
+  }
+}

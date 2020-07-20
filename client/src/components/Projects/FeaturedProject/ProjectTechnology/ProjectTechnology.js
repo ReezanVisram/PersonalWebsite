@@ -5,7 +5,7 @@ const ProjectTechnology = ({ techs }) => {
         <li>{tech}</li>
     );
 
-    return <ul>{listItems}</ul>
+    return <ul className="projectTechnology-ul">{listItems}</ul>
 }
 
 export default ProjectTechnology;

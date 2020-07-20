@@ -1,27 +1,22 @@
 import React from 'react';
 import './FeaturedProject.css'
 
+import Modal from '../Modal/Modal';
 import ProjectTechnology from './ProjectTechnology/ProjectTechnology';
 
-const FeaturedProject = ({ projectName, projectDescription, projectTechnologies, projectLink }) => {
-
+const FeaturedProject = ({ click, projectName, projectDescription, projectTechnologies, projectLink, releaseLink }) => {
 
     return (
-        <div className="featuredProject-container">
-            <div>
-                <h2>Featured Project: {projectName}</h2>
-                <a href={projectLink}>
-                    <img className="featuredProject-screenshot" src={require('../../../images/' + String(projectName) + '.png')} />
-                </a>
-            </div>
+        <figure className="featuredProject-container" onClick={() => click(projectName, projectDescription, projectTechnologies, projectLink, releaseLink)}>
+            <img className="featuredProject-screenshot" src={require('../../../images/' + String(projectName) + '.png')} />
 
-            <div className="featuredProject-description-container">
-                <h3>{projectDescription}</h3>
+            <figcaption>
+                <h1>{projectName}</h1>
+                {projectDescription}
+            </figcaption>
+        </figure>
 
-                <ProjectTechnology techs={projectTechnologies} />
-            </div>
 
-        </div>
     )
 }
 
