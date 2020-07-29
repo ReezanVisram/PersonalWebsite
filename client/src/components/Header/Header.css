@@ -1,3 +1,4 @@
+
 a {
   text-decoration: none;
   color: #D2BD45;
@@ -46,13 +47,13 @@ a {
   margin: 1%;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 750px) {
   .header-links-container {
     display: none;
   }
 }
 
-@media (min-width: 721px) {
+@media (min-width: 751px) {
   .header-side-drawer-toggle-button-container {
     display: none;
   }

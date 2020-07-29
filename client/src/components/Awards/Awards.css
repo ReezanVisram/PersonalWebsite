@@ -1,0 +1,44 @@
+.awards-container {
+    margin: 10%;
+    overflow: inherit;
+}
+
+.awards-header-container {
+    text-align: center;
+    border-bottom: 1px solid #D2BD45;
+    margin-bottom: 1%;
+}
+
+.awards-header {
+    color: #D2BD45;
+}
+
+.awards-featured-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    justify-items: center;
+}
+
+@media (max-width: 1440px) {
+    .awards-featured-container {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 920px) {
+    .awards-featured-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 720px) {
+    .awards-container {
+        text-align: center;
+    }
+
+    .awards-featured-container {
+        grid-template-columns: auto;
+    }
+
+}

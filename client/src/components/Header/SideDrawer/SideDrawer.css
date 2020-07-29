@@ -41,10 +41,10 @@
 
 .side-drawer a:hover,
 .side-drawer a:active {
-    color: #a89738;
+    color: #A89738;
 }
 
-@media (min-width: 721px) {
+@media (min-width: 751px) {
     .side-drawer {
         display: none;
     }

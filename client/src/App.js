@@ -6,15 +6,18 @@ import Header from './components/Header/Header';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Experience from './components/Experience/Experience';
+import Awards from './components/Awards/Awards';
+import Footer from './components/Footer/Footer';
 import SideDrawer from './components/Header/SideDrawer/SideDrawer';
 import Backdrop from './components/Header/Backdrop/Backdrop';
-import Modal from './components/Projects/Modal/Modal';
-import Footer from './components/Footer/Footer';
+import Modal from './components/Modal/Modal';
+import Contact from './components/Contact/Contact';
 
 class App extends React.Component {
   state = {
     sideDrawerOpen: false,
-    modalOpen: false
+    modalOpen: false,
+    contactOpen: false
   };
 
   drawerToggleClickHandler = () => {
@@ -23,28 +26,39 @@ class App extends React.Component {
     })
   }
 
-  modalClickHandler = (projectName, projectDescription, projectTechs, githubLink, releaseLink) => {
-    console.log(projectName);
+  modalClickHandler = (isProject, isDownload, name, description, technologies, githubLink, releaseLink) => {
     this.setState((prevState) => {
-      return {modalOpen: !prevState.modalOpen, currProjectName: projectName, currProjectDescription: projectDescription, currProjectTechs: projectTechs, currGithubLink: githubLink, currReleaseLink: releaseLink}
+      return {modalOpen: !prevState.modalOpen, isProject: isProject, isDownload: isDownload, name: name, description: description, technologies: technologies, githubLink: githubLink, releaseLink: releaseLink}
+    })
+  }
+
+  contactClickHandler = () => {
+    this.setState((prevState) => {
+      return {contactOpen: !prevState.contactOpen}
     })
   }
 
   backdropClickHandler = () => {
     this.setState({sideDrawerOpen: false});
     this.setState({modalOpen: false});
+    this.setState({contactOpen: false})
   }
 
   render() {
     let backdrop;
     let modal;
+    let contact;
 
-    if (this.state.sideDrawerOpen || this.state.modalOpen) {
+    if (this.state.sideDrawerOpen || this.state.modalOpen || this.state.contactOpen) {
       backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
 
     if (this.state.modalOpen) {
-      modal = <Modal projectName={this.state.currProjectName} projectDescription={this.state.currProjectDescription} projectTechnologies={this.state.currProjectTechs} projectGithubLink={this.state.currGithubLink} />
+      modal = <Modal isProject={this.state.isProject} isDownload={this.state.isDownload} name={this.state.name} description={this.state.description} technologies={this.state.technologies} githubLink={this.state.githubLink} releaseLink={this.state.releaseLink} />
+    }
+
+    if (this.state.contactOpen) {
+      contact = <Contact />
     }
 
     return (
@@ -54,17 +68,29 @@ class App extends React.Component {
         <SideDrawer click={this.backdropClickHandler} show={this.state.sideDrawerOpen} />
         {modal}
         {backdrop}
+        {contact}
 
-      
         <div style={{marginTop: "15px"}}>
-          <About />
-  
-          <Projects modalClickHandler={this.modalClickHandler} />
-  
-          <Experience />
+
+          <section id="about">
+            <About />
+          </section>
+
+          <section id="projects">
+            <Projects modalClickHandler={this.modalClickHandler} />
+          </section>
+
+          <section id="experience">
+            <Experience />
+          </section>
+
+          <section id="awards">
+            <Awards modalClickHandler={this.modalClickHandler} />
+          </section>
+
         </div>
 
-        <Footer />
+        <Footer contactClickHandler={this.contactClickHandler} modalClickHandler={this.modalClickHandler} />
   
       </div>
     );

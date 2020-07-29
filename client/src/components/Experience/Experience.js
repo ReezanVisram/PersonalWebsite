@@ -49,6 +49,23 @@ const Experience = () => {
                     <div className="experience-camp" hidden>
                         <h3>Assistant Summer Camp Counsellor at the City of Pickering</h3>
                         <p>Summer 2017 & Summer 2018</p>
+
+                        <ul className="experience-job-skills-list">
+                            <li>
+                                Directed daily functions for summer camp dedicated to creating engaging recreational opportunities
+                                for children.
+                            </li>
+                            <li>
+                                Organized and led small and large group activities such as crafts, nature, songs, games, swimming and
+                                opening and closing ceremonies.
+                            </li>
+                            <li>
+                                Awarded top assistant counsellor for the adventure camp for demonstrating superior performance. (Summer 2018)
+                            </li>
+                            <li>
+                                Awarded most improved assistant counsellor award (Summer 2017)
+                            </li>
+                        </ul>
                     </div>
 
                 </div>

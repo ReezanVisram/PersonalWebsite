@@ -25,18 +25,31 @@
 
 .experience-job-location-button {
     width: 100%;
-    height: 5vh;
+    height: 5rem;
     background-color: #121212;
     color: #D2BD45;
     border: none;
     border-bottom: 1px solid #D2BD45;
-    font-size: 2vh;
+    font-size: 1.25rem;
+}
+
+.experience-job-location-button:hover {
+    background-color: #222222;
+    cursor: pointer;
+}
+
+.experience-job-location-button:active, 
+.experience-job-location-button:focus {
+    background-color: #222222;
+    outline: none;
 }
 
 .experience-job-description-container {
-    margin-left: 10%;
+    margin-left: 10vw;
+    width: 80vw;
 }
 
 .experience-job-skills-list {
     margin-top: 2%;
+    font-size: 20px;
 }

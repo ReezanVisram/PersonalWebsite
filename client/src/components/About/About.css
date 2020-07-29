@@ -38,6 +38,16 @@
     margin-top: 1%;
 }
 
+.about-content-container h2 {
+    margin-top: 5%;
+}
+
+.down-arrow-1 {
+    color: #D2BD45;
+    font-size: 64px;
+}
+
+
 @media (max-width: 720px) {
     .about-header-container {
         margin-top: 15%;
