@@ -13,7 +13,12 @@ const Modal = ({ show, isDownload, isProject, name, description, technologies, g
         if (isDownload) {
             runIcon = <a href={releaseLink} download><DownloadOutlined color="#D2Bd45" /></a>
         } else {
-            runIcon = <a href={releaseLink}><LinkOutlined color="#D2Bd45" /></a>
+            if (name === 'PillsOnWheels' || name === 'CodeLang') {
+                runIcon = <a className="google-badge-link" href='https://play.google.com/store/apps/details?id=com.Visram_INC.PillsOnWheels&hl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src={require('../../images/google-play-badge.png')} /></a>
+            } else {
+                runIcon = <a href={releaseLink}><LinkOutlined color="#D2Bd45" /></a>
+            }
+
         }
 
         const techs = technologies.map((tech) => <li>{tech}</li>);

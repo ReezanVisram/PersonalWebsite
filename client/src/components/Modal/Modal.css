@@ -8,7 +8,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    width: 50%;
+    width: 60%;
     height: 50%;
     text-align: center;
 
@@ -58,15 +58,34 @@
 }
 
 .modal-icons-container {
+    margin-top: 1%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     font-size: 60px;
     background-color: #222222;
+    width: 100%;
 }
 
 .modal-icons-container a:hover {
     cursor: pointer;
     color: #86792b;
     background-color: #222222;
+}
+
+.modal-icons-container a {
+    margin: 0% 1%;
+}
+
+.google-badge-link {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 20%;
+    width: 20%;
+    min-width: 150px;
+    min-height: 50px;
+}
+
+.google-badge-link img {
+    height: 100%;
+    width: 100%
 }
