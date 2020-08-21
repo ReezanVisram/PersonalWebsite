@@ -30,7 +30,7 @@
     color: #D2BD45;
     border: none;
     border-bottom: 1px solid #D2BD45;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .experience-job-location-button:hover {
@@ -52,4 +52,10 @@
 .experience-job-skills-list {
     margin-top: 2%;
     font-size: 20px;
+}
+
+@media (max-width: 751px) {
+    .experience-job-skills-list {
+        font-size: 14px;
+    }
 }

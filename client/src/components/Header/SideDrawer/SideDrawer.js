@@ -22,8 +22,8 @@ const SideDrawer = ({ click, show }) => {
                 <li><AnchorLink href='#projects' onClick={click}>Projects</AnchorLink></li>
                 <li><AnchorLink href='#experience' onClick={click}>Experience</AnchorLink></li>
                 <li><AnchorLink href='#awards' onClick={click}>Awards</AnchorLink></li>
-                <li><a href={referenceLetter} onClick={click}>Reference Letters</a></li>
-                <li><a href={resume} onClick={click}>Resume</a></li>
+                <li><a href={referenceLetter} onClick={click} target="_blank" rel="noopener noreferrer">Reference Letters</a></li>
+                <li><a href={resume} onClick={click} target="_blank" rel="noopener noreferrer">Resume</a></li>
             </ul>
         </nav>
     )

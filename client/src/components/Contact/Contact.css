@@ -1,12 +1,15 @@
 .contact {
-    height: 40%;
-    width: 40%;
+    height: 50%;
+    width: 75%;
     background-color: #222222;
     z-index: 200;
     color: #D2BD45;
     position: fixed;
-    left: 30%;
-    top: 25%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     display: flex;
     flex-direction: column;
 }

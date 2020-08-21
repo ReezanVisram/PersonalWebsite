@@ -14,14 +14,14 @@ const Modal = ({ show, isDownload, isProject, name, description, technologies, g
             runIcon = <a href={releaseLink} download><DownloadOutlined color="#D2Bd45" /></a>
         } else {
             if (name === 'PillsOnWheels' || name === 'CodeLang') {
-                runIcon = <a className="google-badge-link" href='https://play.google.com/store/apps/details?id=com.Visram_INC.PillsOnWheels&hl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src={require('../../images/google-play-badge.png')} /></a>
+                runIcon = <a className="google-badge-link" target="_blank" rel="noopener noreferrer" href='https://play.google.com/store/apps/details?id=com.Visram_INC.PillsOnWheels&hl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src={require('../../images/google-play-badge.png')} /></a>
             } else {
-                runIcon = <a href={releaseLink}><LinkOutlined color="#D2Bd45" /></a>
+                runIcon = <a href={releaseLink} target="_blank" rel="noopener noreferrer" ><LinkOutlined color="#D2Bd45" /></a>
             }
 
         }
 
-        const techs = technologies.map((tech) => <li>{tech}</li>);
+        const techs = technologies.map((tech) => <li key={tech}>{tech}</li>);
 
         modalContent = (
             <div className="modal-content-container">
@@ -33,7 +33,7 @@ const Modal = ({ show, isDownload, isProject, name, description, technologies, g
                 </div>
 
                 <div className="modal-icons-container">
-                    <a href={githubLink}>
+                    <a href={githubLink} target="_blank" rel="noopener noreferrer">
                         <GithubOutlined color="#D2BD45" />
                     </a>
 

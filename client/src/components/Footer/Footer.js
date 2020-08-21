@@ -12,10 +12,10 @@ const Footer = ({ contactClickHandler, modalClickHandler }) => {
                 <div className="footer-website-title">
                     <h1>Reezan Visram</h1>
                     <div className="footer-media-container">
-                        <a href="https://www.instagram.com/reezanvisram/">
+                        <a href="https://www.instagram.com/reezanvisram/" target="_blank" rel="noopener noreferrer">
                             <InstagramOutlined color="#D2BD45" />
                         </a>
-                        <a href="https://github.com/ReezanVisram">
+                        <a href="https://github.com/ReezanVisram" target="_blank" rel="noopener noreferrer">
                             <GithubOutlined color="#D2BD45" /> 
                         </a>
                     </div>

@@ -11,7 +11,6 @@
     width: 60%;
     height: 50%;
     text-align: center;
-
 }
 
 .modal-header {
@@ -88,4 +87,10 @@
 .google-badge-link img {
     height: 100%;
     width: 100%
+}
+
+@media (max-width: 751px) {
+    .modal-header {
+        font-size: 0.75rem;
+    }
 }
