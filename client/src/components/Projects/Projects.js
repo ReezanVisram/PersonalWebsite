@@ -29,7 +29,7 @@ const Projects = ({ modalClickHandler }) => {
 					isDownload={false}
 					name={"PillsOnWheels"}
 					description={
-						"A platform for users to manage, order, and have prescriptions delivered straight to their door. PillsOnWheels is an Android app deployed on the Google Play Store."
+						"An Android App for users to manage, order, and have prescriptions delivered straight to their door. PillsOnWheels is an Android app deployed on the Google Play Store."
 					}
 					technologies={["JavaScript (React Native) ", "Python (Flask) "]}
 					githubLink={"https://github.com/ReezanVisram/Hack-the-Northeast"}
@@ -43,7 +43,7 @@ const Projects = ({ modalClickHandler }) => {
 					isDownload={false}
 					name={"Complete Crisis Coverage"}
 					description={
-						"A platform where users can see COVID-19 Statistics from all over the world, as well as read firsthand stories of how COVID-19 has affected people globally."
+						"A website where users can see COVID-19 Statistics from all over the world, as well as read firsthand stories of how COVID-19 has affected people globally."
 					}
 					technologies={[
 						"Python (Flask) ",
@@ -59,7 +59,7 @@ const Projects = ({ modalClickHandler }) => {
 					isDownload={false}
 					name={"ImproveMint"}
 					description={
-						"A self-improvement platform where users can track tasks and habits they want to build."
+						"A self-improvement website where users can track tasks and habits they want to build."
 					}
 					technologies={["Python (Flask)", "HTML ", "CSS ", "JavaScript "]}
 					githubLink={"https://github.com/ReezanVisram/Improve-Mint"}
