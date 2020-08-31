@@ -16,7 +16,7 @@ const Projects = ({ modalClickHandler }) => {
 					isProject={true}
 					isDownload={true}
 					name={"NHLSimulation"}
-					description={
+					clickableDesc={
 						"A program that takes the most up-to-date stats on every NHL player, and uses these stats to create a simulation of the 2020-2021 NHL Season"
 					}
 					technologies={["Python (Flask)", "HTML ", "CSS ", "JavaScript "]}
@@ -28,7 +28,7 @@ const Projects = ({ modalClickHandler }) => {
 					isProject={true}
 					isDownload={false}
 					name={"PillsOnWheels"}
-					description={
+					clickableDesc={
 						"An Android App for users to manage, order, and have prescriptions delivered straight to their door. PillsOnWheels is an Android app deployed on the Google Play Store."
 					}
 					technologies={["JavaScript (React Native) ", "Python (Flask) "]}
@@ -42,7 +42,7 @@ const Projects = ({ modalClickHandler }) => {
 					isProject={true}
 					isDownload={false}
 					name={"Complete Crisis Coverage"}
-					description={
+					clickableDesc={
 						"A website where users can see COVID-19 Statistics from all over the world, as well as read firsthand stories of how COVID-19 has affected people globally."
 					}
 					technologies={[
@@ -58,7 +58,7 @@ const Projects = ({ modalClickHandler }) => {
 					isProject={true}
 					isDownload={false}
 					name={"ImproveMint"}
-					description={
+					clickableDesc={
 						"A self-improvement website where users can track tasks and habits they want to build."
 					}
 					technologies={["Python (Flask)", "HTML ", "CSS ", "JavaScript "]}
@@ -70,7 +70,7 @@ const Projects = ({ modalClickHandler }) => {
 					isProject={true}
 					isDownload={false}
 					name={"Project-Euler"}
-					description={
+					clickableDesc={
 						"A collection of programs used to solve various Project-Euler problems."
 					}
 					technologies={["Python"]}
@@ -82,7 +82,7 @@ const Projects = ({ modalClickHandler }) => {
 					isProject={true}
 					isDownload={true}
 					name={"Pharmaceutica"}
-					description={
+					clickableDesc={
 						"A game where you control a Pharmaceutical Company racing to develop a vaccine for COVID-19"
 					}
 					technologies={["Unity Game Engine", "C#"]}
