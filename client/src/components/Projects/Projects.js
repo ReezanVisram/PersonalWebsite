@@ -32,7 +32,7 @@ const Projects = ({ modalClickHandler }) => {
 						"An Android App for users to manage, order, and have prescriptions delivered straight to their door. PillsOnWheels is an Android app deployed on the Google Play Store."
 					}
 					technologies={["JavaScript (React Native) ", "Python (Flask) "]}
-					githubLink={"https://github.com/ReezanVisram/Hack-the-Northeast"}
+					githubLink={"https://github.com/ReezanVisram/PillsOnWheels"}
 					releaseLink={
 						"https://play.google.com/store/apps/details?id=com.Visram_INC.PillsOnWheels&hl=en"
 					}
@@ -51,6 +51,7 @@ const Projects = ({ modalClickHandler }) => {
 						"CSS (Bootstrap) ",
 						"HTML ",
 					]}
+					githubLink={"https://github.com/ReezanVisram/CompleteCrisisCoverage"}
 					releaseLink={"http://www.reezanvisram.com/completecrisiscoverage"}
 				/>
 				<PictureClickable
@@ -62,7 +63,7 @@ const Projects = ({ modalClickHandler }) => {
 						"A self-improvement website where users can track tasks and habits they want to build."
 					}
 					technologies={["Python (Flask)", "HTML ", "CSS ", "JavaScript "]}
-					githubLink={"https://github.com/ReezanVisram/Improve-Mint"}
+					githubLink={"https://github.com/ReezanVisram/ImproveMint"}
 					releaseLink={"http://www.reezanvisram.com/improvemint"}
 				/>
 				<PictureClickable
@@ -86,7 +87,7 @@ const Projects = ({ modalClickHandler }) => {
 						"A game where you control a Pharmaceutical Company racing to develop a vaccine for COVID-19"
 					}
 					technologies={["Unity Game Engine", "C#"]}
-					githubLink={"https://github.com/ReezanVisram/MasseyHacks2020"}
+					githubLink={"https://github.com/ReezanVisram/Pharmaceutica"}
 					releaseLink={process.env.PUBLIC_URL + "Pharmaceutica.zip"}
 				/>
 			</div>
