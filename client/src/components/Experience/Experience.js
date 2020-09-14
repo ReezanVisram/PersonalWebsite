@@ -2,18 +2,26 @@ import React from "react";
 import "./Experience.css";
 
 const Experience = () => {
+	let [htneClasses, setHtneClasses] = React.useState("experience");
+	let [tutorClasses, setTutorClasses] = React.useState("experience hidden");
+	let [campClasses, setCampClasses] = React.useState("experience hidden");
+
+	const showHtneDiv = () => {
+		setHtneClasses("experience");
+		setTutorClasses("experience hidden");
+		setCampClasses("experience hidden");
+	};
+
 	const showTutorDiv = () => {
-		const tutorDiv = document.querySelector(".experience-tutor");
-		const campDiv = document.querySelector(".experience-camp");
-		tutorDiv.hidden = false;
-		campDiv.hidden = true;
+		setTutorClasses("experience");
+		setHtneClasses("experience hidden");
+		setCampClasses("experience hidden");
 	};
 
 	const showCampDiv = () => {
-		const tutorDiv = document.querySelector(".experience-tutor");
-		const campDiv = document.querySelector(".experience-camp");
-		tutorDiv.hidden = true;
-		campDiv.hidden = false;
+		setTutorClasses("experience hidden");
+		setHtneClasses("experience hidden");
+		setCampClasses("experience");
 	};
 
 	return (
@@ -24,6 +32,14 @@ const Experience = () => {
 
 			<div className="experience-job-container">
 				<ul className="job-title-button-list">
+					<li>
+						<button
+							className="experience-job-location-button"
+							onClick={showHtneDiv}
+						>
+							Hack the Northeast
+						</button>
+					</li>
 					<li>
 						<button
 							className="experience-job-location-button"
@@ -43,7 +59,29 @@ const Experience = () => {
 				</ul>
 
 				<div className="experience-job-desc-container">
-					<div className="experience-tutor">
+					<div className={htneClasses}>
+						<h3>Frontend Developer at Hack the Northeast</h3>
+						<p>August 2020 - Ongoing</p>
+						<ul className="experience-job-skills-list">
+							<li>
+								Built the User Interface of the Hack the Northeast website using
+								React and Material UI.
+							</li>
+							<li>
+								Used responsive design practices to ensure the website looks
+								stunning on all screen sizes.
+							</li>
+							<li>Built out frontend animations with GSAP.js.</li>
+							<li>
+								Worked alongside other developers and Graphics Designers to
+								create a stunning website.
+							</li>
+							<h3>Environment:</h3>{" "}
+							<h3>React, Material UI, JSX, JSS, GSAP.js.</h3>
+						</ul>
+					</div>
+
+					<div className={tutorClasses}>
 						<h3>Math and Science Tutor at Dunbarton High School</h3>
 						<p>October 2018 - ongoing</p>
 
@@ -61,8 +99,7 @@ const Experience = () => {
 							</li>
 						</ul>
 					</div>
-
-					<div className="experience-camp" hidden>
+					<div className={campClasses}>
 						<h3>Assistant Summer Camp Counsellor at the City of Pickering</h3>
 						<p>Summer 2017 & Summer 2018</p>
 
