@@ -1,5 +1,5 @@
 # PersonalWebsite
-My Personal Portfolio website, built with React and Flask. [http://www.reezanvisram.com]
+[My Personal Portfolio website] (http://www.reezanvisram.com), built with React and Flask.
 
 ## Contents
 1. A list of all of my published projects and their respective release locations
